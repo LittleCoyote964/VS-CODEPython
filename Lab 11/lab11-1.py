@@ -1,5 +1,5 @@
 def conversion(Dollar):
-    Peso = Dollar * 20.68
+    Peso = Dollar / 0.058
     Pesos = f"{Peso:.2f}"
     print("Mexican Pesos: $", Pesos)
 
