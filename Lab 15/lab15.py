@@ -24,3 +24,15 @@ def display_media():
     print("2. Camera")
     print("3. Download Youtube")
     print("4. Main Menu")
+
+def display_loginmenu():
+    print("Login / signup menu")
+    print("1. Log in ")
+    print("2. Sign up")
+    print("3. Exit")
+
+def display_login():
+    print("Log in!")
+    
+def display_signup():
+    print("Sign up!")
