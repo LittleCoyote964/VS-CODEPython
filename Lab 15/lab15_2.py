@@ -3,7 +3,7 @@ import lab15
 
 while True:
     lab15.display_loginmenu()
-    choice = input("\nPlease input: ")
+    choice = input("Please input: ")
 
     if choice == "1":
         lab15.display_login()
@@ -22,19 +22,19 @@ while True:
             index = ids.index(user_id)
 
             if index < len(pwds) and pwds[index] == user_pwd:
-                print("Login has been successful!")
+                print("\nLogin has been successful!\n")
                 import menu
                 menu.run_main_program()
             else:
-                print("Incorrect password!")
+                print("\nIncorrect password!")
         else:
-            print("User not found!")       
+            print("\nUser not found!")       
          
 
     elif choice == "2":
         lab15.display_signup()
     
-        new_id = input("Please input an ID: ")
+        new_id = input("\nPlease input an ID: ")
         new_pwd = input("Please input a password: ")
     
         idfile = open("id.txt", "a")
@@ -46,12 +46,11 @@ while True:
         pwdfile.write(new_pwd + "\n")
         pwdfile.close()
     
-        print("Signup has been successful!")
-        break
+        print("\nSignup has been successful!")
         
     elif choice == "3":
         break
 
     else:
-        choice = input("That is not in the list!")
-        break
+        choice = input("That is not in the list, press any key to continue. ")
+        
