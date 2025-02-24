@@ -1,4 +1,4 @@
-import menu
+#import menu
 import lab15
 
 while True:
@@ -23,6 +23,7 @@ while True:
 
             if index < len(pwds) and pwds[index] == user_pwd:
                 print("Login has been successful!")
+                import menu
                 menu.run_main_program()
             else:
                 print("Incorrect password!")
