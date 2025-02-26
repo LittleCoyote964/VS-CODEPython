@@ -6,10 +6,11 @@ class rectangle:
     def __add__(self, other):
         return rectangle(self.width + other.width, self.height + other.height)
     def area(self):
-        return self.w * self.h
+        return self.width * self.height
 
 rec1 = rectangle(3, 4)
-rec2 = rectangle(7, 8)
+rec2 = rectangle(7, 4)
 rec3 = rec1 + rec2
-#print(rec3.area)
+
 print("New rectangle:", rec3.width, rec3.height)
+print("New rectangle area:", rec3.area())
