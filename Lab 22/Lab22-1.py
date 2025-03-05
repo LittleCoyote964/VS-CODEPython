@@ -18,7 +18,12 @@ values = [('KUK32', "Ford", "F250", 2024, 23, 65000, "silver"),
           ("HTP40", "Toyota", "Corolla", 2020, 50654, 17000, "black"),
           ("KLPT0", "Honda", "Ridgeline", 2024, 4, 31650, "red")]
 
+query = "DELETE FROM cars WHERE model in (F250, Rav4, civic, Corolla, Ridgeline)"
+cursor.execute(query)
+
 cursor.executemany(sql, values)
+
+
 
 db.commit()
 
