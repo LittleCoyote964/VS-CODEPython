@@ -1,5 +1,5 @@
 import pygame
-import random
+#import random
 pygame.init() # initializing the pygame is required.
 
 screen_width = 600
@@ -32,6 +32,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+            
     pygame.display.update()
     clock.tick(fps)
 
@@ -45,6 +46,7 @@ for i in range(snake_length):
     segment = pygame.Rect(x, y, snake_size, snake_size)
     snake_segments.append(segment)
 
+import random
 #APPLE
 apple_size = 10
 apple_position = (random.randrange(0, screen_width // apple_size) * apple_size,
